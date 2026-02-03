@@ -136,7 +136,11 @@ const LandingPage = () => {
                                         <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Traffic & Personal Injury' : 'Tráfico y Lesiones Personales'}</p>
                                     </div>
                                 </div>
-
+                                <p className="text-slate-500 mb-3 text-sm leading-relaxed">
+                                    {language === 'en'
+                                        ? "Experts in the assessment and rehabilitation of traffic accident injuries. Comprehensive approach from diagnosis to physical therapy."
+                                        : "Expertos en la valoración y rehabilitación de lesiones por accidentes de tráfico. Enfoque integral desde el diagnóstico hasta la terapia física."}
+                                </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">folder_managed</span>
@@ -187,7 +191,11 @@ const LandingPage = () => {
                                         <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'USCIS Certified Civil Surgeons' : 'Cirujanos Civiles Certificados'}</p>
                                     </div>
                                 </div>
-
+                                <p className="text-slate-500 mb-3 text-sm leading-relaxed">
+                                    {language === 'en'
+                                        ? "Certified medical evaluations for immigration procedures. Efficient, transparent, and error-free process for your interview."
+                                        : "Evaluaciones médicas certificadas para trámites migratorios. Proceso eficiente, transparente y libre de errores para su entrevista."}
+                                </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">radiology</span>
@@ -245,7 +253,11 @@ const LandingPage = () => {
                                         <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Primary Care & Prevention' : 'Atención Primaria y Prevención'}</p>
                                     </div>
                                 </div>
-
+                                <p className="text-slate-500 mb-3 text-sm leading-relaxed">
+                                    {language === 'en'
+                                        ? "Services for patients without insurance or self-pay. Comprehensive care focused on your long-term well-being."
+                                        : "Servicios para pacientes sin seguro o pago privado. Atención integral enfocada en su bienestar a largo plazo."}
+                                </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">clinical_notes</span>
@@ -296,7 +308,11 @@ const LandingPage = () => {
                                         <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Supervised & Personalized' : 'Supervisado y Personalizado'}</p>
                                     </div>
                                 </div>
-
+                                <p className="text-slate-500 mb-3 text-sm leading-relaxed">
+                                    {language === 'en'
+                                        ? "Personalized, medically supervised program designed to help you achieve your healthy weight goals safely."
+                                        : "Programa personalizado con supervisión médica para ayudarle a alcanzar sus metas de peso saludable de manera segura."}
+                                </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">medication</span>
@@ -361,7 +377,11 @@ const LandingPage = () => {
                                         <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'IVs, Injections & NAD+' : 'Sueros, Inyecciones y NAD+'}</p>
                                     </div>
                                 </div>
-
+                                <p className="text-slate-500 mb-3 text-sm leading-relaxed">
+                                    {language === 'en'
+                                        ? "Advanced wellness solutions to optimize your physical and mental vitality. Customized based on medical evaluation."
+                                        : "Soluciones de bienestar para optimizar su vitalidad. Fórmulas personalizadas según evaluación médica."}
+                                </p>
 
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-3">
@@ -446,7 +466,7 @@ const LandingPage = () => {
                 </section>
 
                 {/* Promo Banner */}
-                <section className="max-w-[1200px] mx-auto px-6 mb-20">
+                <section className="max-w-[1200px] mx-auto px-6 mb-20" >
                     <div className="bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
                         <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between">
@@ -474,7 +494,7 @@ const LandingPage = () => {
                 </section>
 
                 {/* Community Section */}
-                <section className="bg-white dark:bg-slate-900/50 py-20">
+                <section className="bg-white dark:bg-slate-900/50 py-20" >
                     <div className="max-w-[1200px] mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div className="relative">
@@ -538,7 +558,7 @@ const LandingPage = () => {
                 </section>
 
                 {/* Contact Section */}
-                <section id="location" className="max-w-[1200px] mx-auto px-6 py-20">
+                <section id="location" className="max-w-[1200px] mx-auto px-6 py-20" >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white dark:bg-slate-900/40 rounded-[2.5rem] overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm">
                         <div className="p-10 md:p-16">
                             <h3 className="text-3xl font-extrabold mb-8 text-slate-900 dark:text-white">{language === 'en' ? 'Visit Our Miami Center' : 'Visite Nuestro Centro en Miami'}</h3>
@@ -592,7 +612,7 @@ const LandingPage = () => {
                 </section>
 
                 {/* CTA Section */}
-                <section className="max-w-[1200px] mx-auto px-6 pb-20">
+                <section className="max-w-[1200px] mx-auto px-6 pb-20" >
                     <div className="bg-primary rounded-[2.5rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-secondary/40 via-transparent to-transparent"></div>
                         <h2 className="text-3xl md:text-5xl font-extrabold mb-6 relative z-10 leading-tight">
@@ -614,7 +634,7 @@ const LandingPage = () => {
             </main>
 
             {/* Footer */}
-            <footer className="bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 pt-16 pb-8">
+            <footer className="bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 pt-16 pb-8" >
                 <div className="max-w-[1200px] mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
                         <div className="col-span-2 md:col-span-1">
