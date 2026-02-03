@@ -113,258 +113,362 @@ const LandingPage = () => {
 
                 {/* Pillars Section */}
                 <section id="services" className="max-w-[1200px] mx-auto px-6 py-12">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-slate-900 dark:text-white">
-                            {language === 'en' ? 'Medical Services' : 'Servicios Médicos'}
-                        </h2>
-                        <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto font-medium">
-                            {language === 'en'
-                                ? 'Everything you need for your health and legal requirements, clearly organized.'
-                                : 'Todo lo que necesita para su salud y requisitos legales, claramente organizado.'}
-                        </p>
-                    </div>
+                    <div className="w-full mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+                        {/* Unified Services Header */}
+                        <div className="p-8 text-center bg-white">
+                            <h3 className="text-2xl font-bold text-slate-800">{language === 'en' ? 'Our Comprehensive Services' : 'Nuestros Servicios Integrales'}</h3>
+                            <p className="text-slate-500 text-sm mt-2 max-w-2xl mx-auto">
+                                {language === 'en'
+                                    ? "Explore our full range of medical solutions, from official immigration exams and accident recovery to holistic wellness therapies."
+                                    : "Explore nuestra gama completa de soluciones médicas, desde exámenes oficiales de inmigración y recuperación de accidentes hasta terapias de bienestar holístico."}
+                            </p>
+                        </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {/* Pillar 1: Immigration */}
-                        <div id="immigration" className="pillar-card border-t-4 border-t-primary shadow-sm hover:shadow-2xl transition-shadow">
-                            <div className="p-8">
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="size-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                        <div className="flex flex-wrap justify-center gap-6 p-6 pt-0 bg-white">
+                            {/* Section 1: Accident Recovery */}
+                            <div id="accident" className="bg-white rounded-2xl px-6 pb-6 pt-5 shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="size-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0">
+                                        <span className="material-symbols-outlined text-3xl font-normal">personal_injury</span>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">{language === 'en' ? 'Accident Recovery' : 'Recuperación de Accidentes'}</h3>
+                                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Traffic & Personal Injury' : 'Tráfico y Lesiones Personales'}</p>
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 gap-4">
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">folder_managed</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Case Coordination' : 'Coordinación de Casos'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Legal representative support' : 'Apoyo a representante legal'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">description</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Clinical Documentation' : 'Documentación Clínica'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Precise reporting' : 'Informes precisos'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">stethoscope</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Comprehensive Exams' : 'Exámenes Integrales'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Dynamic evaluations' : 'Evaluaciones dinámicas'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">radiology</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Diagnostic Imaging' : 'Diagnóstico por Imágenes'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'On-site X-rays' : 'Rayos X en el sitio'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-rose-600 mt-1 font-normal">physical_therapy</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Physical Therapy' : 'Terapia Física'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Recovery from injuries' : 'Recuperación de lesiones'}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Section 2: Immigration Process */}
+                            <div id="immigration" className="bg-white rounded-2xl px-6 pb-6 pt-5 shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="size-12 rounded-2xl bg-slate-100 text-slate-600 flex items-center justify-center shrink-0">
                                         <span className="material-symbols-outlined text-3xl font-normal">badge</span>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-slate-900">{language === 'en' ? 'Immigration Process' : 'Proceso de Inmigración'}</h3>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">{language === 'en' ? 'Immigration Process' : 'Proceso de Inmigración'}</h3>
+                                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'USCIS Certified Civil Surgeons' : 'Cirujanos Civiles Certificados'}</p>
+                                    </div>
                                 </div>
-                                <p className="text-slate-500 dark:text-slate-400 mb-8 text-sm">
-                                    {language === 'en'
-                                        ? "We offer certified medical evaluations for immigration procedures, adhering strictly to official standards. Our process is efficient, transparent, and error-free, giving you the assurance that your medical documentation will be completed correctly for your interview."
-                                        : "Ofrecemos evaluaciones médicas certificadas para trámites migratorios, con estricto apego a los estándares oficiales. Nuestro proceso es eficiente, transparente y libre de errores, brindándole la seguridad de que su documentación médica será completada correctamente para su entrevista."}
-                                </p>
-                                <div className="space-y-4">
+
+                                <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">clinical_notes</span>
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">radiology</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'I-693 Medical Exam' : 'Examen Médico I-693'}</h4>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Chest X-Ray Support' : 'Soporte de Rayos X'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Coordination if indicated' : 'Coordinación si es indicado'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">rocket_launch</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Expedited Service' : 'Servicio Expedito'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Rush options available' : 'Opciones urgentes disponibles'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">edit_document</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Form Preparation' : 'Preparación de Formas'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Sealed envelope ready for interview' : 'Sobre sellado listo para la entrevista'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">clinical_notes</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'I-693 Medical Exam' : 'Examen Médico I-693'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Complete physical & mental assessment' : 'Evaluación física y mental completa'}</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">vaccines</span>
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">biotech</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Vaccination' : 'Vacunación'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Records validation & on-site shots' : 'Validación de registros y vacunas en el sitio'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">biotech</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Laboratory' : 'Laboratorio'}</h4>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Laboratory' : 'Laboratorio'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Quantiferon and RPR / GC Screening (Syphilis / Gonorrhea)' : 'Quantiferon y RPR / GC Screening (Sífilis / Gonorrea)'}</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">edit_document</span>
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">vaccines</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Form Preparation' : 'Preparación de Formas'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Sealed envelope ready for interview' : 'Sobre sellado listo para la entrevista'}</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">radiology</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Chest X-Ray Support' : 'Soporte de Rayos X'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Coordination for chest imaging if indicated' : 'Coordinación para imágenes de tórax si es indicado'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">bloodtype</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Disease Screening' : 'Detección de Enfermedades'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Required testing for Syphilis and Gonorrhea' : 'Pruebas requeridas para Sífilis y Gonorrea'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">rocket_launch</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Expedited Service' : 'Servicio Expedito'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Rush options available for urgent deadlines' : 'Opciones urgentes disponibles para plazos inmediatos'}</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Vaccination' : 'Vacunación'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Records validation & on-site shots' : 'Validación de registros y vacunas en el sitio'}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Pillar 2: Accident */}
-                        <div id="accident" className="pillar-card border-t-4 border-t-secondary shadow-sm hover:shadow-2xl transition-shadow">
-                            <div className="p-8">
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="size-12 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center">
-                                        <span className="material-symbols-outlined text-3xl font-normal">personal_injury</span>
+                            {/* Section 3: Medical Consultation */}
+                            <div id="consultation" className="bg-white rounded-2xl px-6 pb-6 pt-5 shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="size-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
+                                        <span className="material-symbols-outlined text-3xl font-normal">stethoscope</span>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-slate-900">{language === 'en' ? 'Accident Recovery' : 'Recuperación de Accidentes'}</h3>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">{language === 'en' ? 'Medical Consultation' : 'Consulta Médica'}</h3>
+                                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Primary Care & Prevention' : 'Atención Primaria y Prevención'}</p>
+                                    </div>
                                 </div>
-                                <p className="text-slate-500 dark:text-slate-400 mb-8 text-sm">
-                                    {language === 'en'
-                                        ? "Experts in the assessment and rehabilitation of traffic accident injuries. Our comprehensive approach ranges from diagnosis and pain relief to physical therapy and precise clinical documentation, ensuring effective recovery and the necessary support for your case."
-                                        : "Expertos en la valoración y rehabilitación de lesiones por accidentes de tráfico. Nuestro enfoque integral abarca desde el diagnóstico y alivio del dolor hasta la terapia física y documentación clínica precisa, asegurando una recuperación efectiva y el respaldo necesario para su caso."}
-                                </p>
-                                <div className="space-y-4">
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">stethoscope</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Comprehensive Exams' : 'Exámenes Integrales'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Dynamic evaluations and active healing roadmaps.' : 'Evaluaciones dinámicas y planes de curación activa.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">physical_therapy</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Physical Therapy' : 'Terapia Física'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Restoring your energetic lifestyle through expert care.' : 'Restaurando su estilo de vida energético a través de un cuidado experto.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">description</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Clinical Documentation' : 'Documentación Clínica'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Precise reporting for your peace of mind and protection.' : 'Informes precisos para su tranquilidad y protección.'}</p>
-                                        </div>
-                                    </div>
 
+                                <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">radiology</span>
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">clinical_notes</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Diagnostic Imaging' : 'Diagnóstico por Imágenes'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'On-site X-rays for immediate injury assessment.' : 'Rayos X en el sitio para evaluación inmediata de lesiones.'}</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Comprehensive Evaluation' : 'Evaluación Integral'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Full physical assessment' : 'Evaluación física completa'}</p>
                                         </div>
                                     </div>
-
-
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">folder_managed</span>
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">biotech</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Case Coordination' : 'Coordinación de Casos'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'We work directly with your legal representative.' : 'Trabajamos directamente con su representante legal.'}</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Lab Analysis' : 'Análisis de Laboratorio'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Detailed blood work review' : 'Revisión detallada de sangre'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">health_and_safety</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Preventive Care' : 'Cuidado Preventivo'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Proactive health strategies' : 'Estrategias de salud'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">assignment_turned_in</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Treatment Planning' : 'Plan de Tratamiento'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Tailored to your needs' : 'Adaptado a usted'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">spa</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Wellness Focus' : 'Enfoque en Bienestar'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Holistic approach' : 'Enfoque holístico'}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Pillar 3: Wellness */}
-                        <div id="wellness" className="pillar-card border-t-4 border-t-teal-400 shadow-sm hover:shadow-2xl transition-shadow">
-                            <div className="p-8">
-                                <div className="flex items-center gap-4 mb-6">
-                                    <div className="size-12 rounded-2xl bg-teal-400/10 text-teal-500 flex items-center justify-center">
+                            {/* Section 4: Weight Loss Program */}
+                            <div id="weight-loss" className="bg-white rounded-2xl px-6 pb-6 pt-5 shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="size-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                        <span className="material-symbols-outlined text-3xl font-normal">monitor_weight</span>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">{language === 'en' ? 'Weight Loss Program' : 'Control de Peso'}</h3>
+                                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'Supervised & Personalized' : 'Supervisado y Personalizado'}</p>
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 gap-4">
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">medication</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'GLP-1 Therapy' : 'Terapia GLP-1'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Prescription support (if indicated)' : 'Apoyo con receta'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">body_system</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'InBody Analysis' : 'Análisis InBody'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Advanced body composition' : 'Composición corporal'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">vital_signs</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Lipotropic Agents' : 'Lipotrópicos'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Metabolic support injections' : 'Inyecciones metabólicas'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">clinical_notes</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Medical Evaluation' : 'Evaluación'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Initial health assessment' : 'Valoración inicial'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">nutrition</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Nutritional Counseling' : 'Nutrición'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Dietary guidance' : 'Guía dietética'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">update</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Ongoing Clinical Follow-up' : 'Seguimiento Clínico'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Regular progress monitoring' : 'Monitoreo continuo'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">assignment</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Personalized Plan' : 'Plan a Medida'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Tailored treatment strategy' : 'Estrategia a medida'}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Section 5: Wellness Therapies */}
+                            <div id="wellness" className="bg-white rounded-2xl px-6 pb-6 pt-5 shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="size-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center shrink-0">
                                         <span className="material-symbols-outlined text-3xl font-normal">bolt</span>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-slate-900">{language === 'en' ? 'Wellness & Vitality' : 'Bienestar y Vitalidad'}</h3>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900 leading-tight">{language === 'en' ? 'Wellness Therapies' : 'Terapias de Bienestar'}</h3>
+                                        <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mt-1">{language === 'en' ? 'IVs, Injections & NAD+' : 'Sueros, Inyecciones y NAD+'}</p>
+                                    </div>
                                 </div>
-                                <p className="text-slate-500 dark:text-slate-400 mb-8 text-sm">
-                                    {language === 'en'
-                                        ? "Boost your health with our premium line of intravenous drips. Formulas rich in vitamins, minerals, and antioxidants designed to revitalize your energy, strengthen your defenses, and accelerate your recovery. Safe treatments administered by professionals for optimal results."
-                                        : "Potencie su salud con nuestra línea premium de sueros intravenosos. Fórmulas ricas en vitaminas, minerales y antioxidantes diseñadas para revitalizar su energía, fortalecer sus defensas y acelerar su recuperación. Tratamientos seguros administrados por profesionales para resultados óptimos."}
+
+
+                                <div className="grid grid-cols-1 gap-4">
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">fitness_center</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">Athletic Boost</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Performance & stamina' : 'Rendimiento y resistencia'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">water_drop</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Hangover Recovery' : 'Recuperación Resaca'}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Hydration & Detox' : 'Hidratación y Detox'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">shield_with_heart</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">Immune Plus</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Flu & Allergy defense' : 'Defensa contra gripe y alergias'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">battery_charging_full</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? "Myers' Cocktail" : "Cóctel Myers"}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Energy & Immune health' : 'Energía e Inmune'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">biotech</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">NAD+ Therapy</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Cellular energy & anti-aging' : 'Energía celular y antienvejecimiento'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">vaccines</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Tri-Immune' : 'Tri-Inmune'}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Zinc + C + Glutathione' : 'Zinc + C + Glutatión'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">syringe</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Vitamin B12' : 'Vitamina B12'}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Energy boost' : 'Impulso de energía'}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className="text-[10px] text-slate-400 mt-6 pt-4 border-t border-slate-100 italic">
+                                    {language === 'en' ? 'All therapies require medical clearance.' : 'Todas las terapias requieren autorización médica.'}
                                 </p>
-                                <div className="space-y-6">
-                                    {/* IV Vitamin Infusions */}
-                                    <div>
-                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3">{language === 'en' ? 'IV Vitamin Infusions' : 'Infusiones de Vitaminas IV'}</h5>
-                                        <div className="space-y-4">
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">fitness_center</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">Athletic Boost</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports performance and stamina' : 'Apoya el rendimiento físico y la resistencia'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">battery_charging_full</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? "Myers' Cocktail" : 'Cóctel Myers'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports energy and immune health' : 'Apoya la energía y el sistema inmunológico'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">shield_with_heart</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">Immune Plus</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Flu • Allergies • Post-viral • Immunity' : 'Gripe • Alergias • Post-viral • Inmunidad'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">spa</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">Stay Healthy</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports long-term wellness' : 'Apoya el bienestar a largo plazo'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">water_drop</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Hangover Recovery' : 'Recuperación post-Resaca'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Hydration and recovery support' : 'Apoyo para hidratación y recuperación'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">medical_services</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Pre-Operative IV' : 'Suero Preoperatorio'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Preparation & Protection' : 'Preparación y protección'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">healing</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Post-Operative IV' : 'Suero Postoperatorio'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Recovery & Healing Support' : 'Apoyo para recuperación y cicatrización'}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Wellness Injections */}
-                                    <div>
-                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3 mt-2">{language === 'en' ? 'Wellness Injections' : 'Inyecciones de Bienestar'}</h5>
-                                        <div className="space-y-4">
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">syringe</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Vitamin B Complex + B12' : 'Complejo B + B12'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports energy & nervous system' : 'Apoya energía y sistema nervioso'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">vaccines</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Tri-Immune Shot' : 'Inyección Tri-Inmune'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Vitamin C + Zinc + Glutathione' : 'Vitamina C + Zinc + Glutatión'}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Specialized Programs */}
-                                    <div>
-                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3 mt-2">{language === 'en' ? 'Specialized Programs' : 'Programas Especializados'}</h5>
-                                        <div className="space-y-4">
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">biotech</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">NAD+ Therapy</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Cellular energy & mental clarity' : 'Energía celular y claridad mental'}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">monitor_weight</span>
-                                                <div>
-                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Medical Weight Loss' : 'Control de Peso Médico'}</h4>
-                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Personalized, medically supervised program' : 'Programa personalizado con supervisión médica'}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+
+                        {/* Flyer Legal Footer */}
+                        <div className="bg-slate-50 p-6 text-center border-t border-slate-100">
+                            <p className="text-[10px] text-slate-400 uppercase tracking-widest font-medium">
+                                {language === 'en'
+                                    ? "All services require prior medical evaluation. Treatments are individualized based on patient needs."
+                                    : "Todos los servicios requieren evaluación médica previa. Los tratamientos son personalizados según las necesidades del paciente."}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Promo Banner */}
+                <section className="max-w-[1200px] mx-auto px-6 mb-20">
+                    <div className="bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+                        <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between">
+                            <div>
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-3xl">stars</span>
+                                    {language === 'en' ? 'Elite Welcome Benefit' : 'Beneficio de Bienvenida Elite'}
+                                </h3>
+                                <p className="text-teal-50 text-lg leading-relaxed max-w-2xl">
+                                    {language === 'en'
+                                        ? 'Schedule your initial medical consultation and receive a complimentary high-precision InBody Body Composition Analysis.'
+                                        : 'Agende su consulta médica inicial y reciba un Análisis de Composición Corporal InBody de alta precisión sin costo adicional.'}
+                                </p>
+                                <p className="text-sm text-teal-100 mt-2">
+                                    {language === 'en'
+                                        ? 'Get advanced metrics on body fat, muscle mass, and hydration to personalize your care.'
+                                        : 'Obtenga métricas avanzadas de grasa, masa muscular e hidratación para personalizar su cuidado.'}
+                                </p>
+                            </div>
+                            <a href="#location" className="bg-white text-teal-600 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-teal-50 transition-colors whitespace-nowrap">
+                                {language === 'en' ? 'Claim Offer' : 'Reclamar Oferta'}
+                            </a>
                         </div>
                     </div>
                 </section>
