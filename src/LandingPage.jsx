@@ -449,7 +449,7 @@ const LandingPage = () => {
                                     </div>
                                 </div>
                                 <p className="text-[10px] text-slate-400 mt-6 pt-4 border-t border-slate-100 italic">
-                                    {language === 'en' ? 'All therapies require medical clearance.' : 'Todas las terapias requieren autorización médica.'}
+                                    {language === 'en' ? 'All therapies require medical evaluation.' : 'Todas las terapias requieren evaluación médica.'}
                                 </p>
                             </div>
                         </div>
