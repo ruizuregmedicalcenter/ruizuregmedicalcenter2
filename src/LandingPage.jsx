@@ -465,33 +465,7 @@ const LandingPage = () => {
                     </div>
                 </section>
 
-                {/* Promo Banner */}
-                <section className="max-w-[1200px] mx-auto px-6 mb-20" >
-                    <div className="bg-gradient-to-r from-teal-500 to-emerald-500 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
-                        <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between">
-                            <div>
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-3xl">stars</span>
-                                    {language === 'en' ? 'Elite Welcome Benefit' : 'Beneficio de Bienvenida Elite'}
-                                </h3>
-                                <p className="text-teal-50 text-lg leading-relaxed max-w-2xl">
-                                    {language === 'en'
-                                        ? 'Schedule your initial medical consultation and receive a complimentary high-precision InBody Body Composition Analysis.'
-                                        : 'Agende su consulta médica inicial y reciba un Análisis de Composición Corporal InBody de alta precisión sin costo adicional.'}
-                                </p>
-                                <p className="text-sm text-teal-100 mt-2">
-                                    {language === 'en'
-                                        ? 'Get advanced metrics on body fat, muscle mass, and hydration to personalize your care.'
-                                        : 'Obtenga métricas avanzadas de grasa, masa muscular e hidratación para personalizar su cuidado.'}
-                                </p>
-                            </div>
-                            <a href="#location" className="bg-white text-teal-600 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-teal-50 transition-colors whitespace-nowrap">
-                                {language === 'en' ? 'Claim Offer' : 'Reclamar Oferta'}
-                            </a>
-                        </div>
-                    </div>
-                </section>
+
 
                 {/* Community Section */}
                 <section className="bg-white dark:bg-slate-900/50 py-20" >
