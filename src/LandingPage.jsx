@@ -158,7 +158,7 @@ const LandingPage = () => {
                                         <span className="material-symbols-outlined text-primary mt-1 font-normal">biotech</span>
                                         <div>
                                             <h4 className="font-bold text-slate-800">{language === 'en' ? 'Laboratory' : 'Laboratorio'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Blood work & communicable disease testing' : 'Análisis de sangre y pruebas de enfermedades'}</p>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Quantiferon and RPR / GC Screening (Syphilis / Gonorrhea)' : 'Quantiferon y RPR / GC Screening (Sífilis / Gonorrea)'}</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -168,13 +168,7 @@ const LandingPage = () => {
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Sealed envelope ready for interview' : 'Sobre sellado listo para la entrevista'}</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-primary mt-1 font-normal">science</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'TB Screening (IGRA)' : 'Prueba de Tuberculosis (IGRA)'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Advanced blood testing for accurate results' : 'Pruebas de sangre avanzadas para resultados precisos'}</p>
-                                        </div>
-                                    </div>
+
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-primary mt-1 font-normal">radiology</span>
                                         <div>
@@ -225,7 +219,7 @@ const LandingPage = () => {
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-secondary mt-1 font-normal">physical_therapy</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Physiotherapy' : 'Fisioterapia'}</h4>
+                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Physical Therapy' : 'Terapia Física'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Restoring your energetic lifestyle through expert care.' : 'Restaurando su estilo de vida energético a través de un cuidado experto.'}</p>
                                         </div>
                                     </div>
@@ -236,13 +230,7 @@ const LandingPage = () => {
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Precise reporting for your peace of mind and protection.' : 'Informes precisos para su tranquilidad y protección.'}</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">accessibility_new</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Chiropractic Care' : 'Cuidado Quiropráctico'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Spinal adjustments for alignment and relief.' : 'Ajustes de columna para alineación y alivio.'}</p>
-                                        </div>
-                                    </div>
+
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-secondary mt-1 font-normal">radiology</span>
                                         <div>
@@ -250,20 +238,8 @@ const LandingPage = () => {
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'On-site X-rays for immediate injury assessment.' : 'Rayos X en el sitio para evaluación inmediata de lesiones.'}</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">self_care</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Massage Therapy' : 'Terapia de Masaje'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Soft tissue mobilization to reduce muscle tension.' : 'Movilización de tejidos blandos para reducir tensión muscular.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-secondary mt-1 font-normal">healing</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{language === 'en' ? 'Pain Management' : 'Manejo del Dolor'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Targeted strategies for chronic and acute pain.' : 'Estrategias focalizadas para dolor crónico y agudo.'}</p>
-                                        </div>
-                                    </div>
+
+
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-secondary mt-1 font-normal">folder_managed</span>
                                         <div>
@@ -289,61 +265,102 @@ const LandingPage = () => {
                                         ? "Boost your health with our premium line of intravenous drips. Formulas rich in vitamins, minerals, and antioxidants designed to revitalize your energy, strengthen your defenses, and accelerate your recovery. Safe treatments administered by professionals for optimal results."
                                         : "Potencie su salud con nuestra línea premium de sueros intravenosos. Fórmulas ricas en vitaminas, minerales y antioxidantes diseñadas para revitalizar su energía, fortalecer sus defensas y acelerar su recuperación. Tratamientos seguros administrados por profesionales para resultados óptimos."}
                                 </p>
-                                <div className="space-y-4">
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">spa</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Wellness Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Optimizes energy, immunity, and holistic recovery.' : 'Optimiza energía, inmunidad y recuperación integral.'}</p>
+                                <div className="space-y-6">
+                                    {/* IV Vitamin Infusions */}
+                                    <div>
+                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3">{language === 'en' ? 'IV Vitamin Infusions' : 'Infusiones de Vitaminas IV'}</h5>
+                                        <div className="space-y-4">
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">fitness_center</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">Athletic Boost</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports performance and stamina' : 'Apoya el rendimiento físico y la resistencia'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">battery_charging_full</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? "Myers' Cocktail" : 'Cóctel Myers'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports energy and immune health' : 'Apoya la energía y el sistema inmunológico'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">shield_with_heart</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">Immune Plus</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Flu • Allergies • Post-viral • Immunity' : 'Gripe • Alergias • Post-viral • Inmunidad'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">spa</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">Stay Healthy</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports long-term wellness' : 'Apoya el bienestar a largo plazo'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">water_drop</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Hangover Recovery' : 'Recuperación post-Resaca'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Hydration and recovery support' : 'Apoyo para hidratación y recuperación'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">medical_services</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Pre-Operative IV' : 'Suero Preoperatorio'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Preparation & Protection' : 'Preparación y protección'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">healing</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Post-Operative IV' : 'Suero Postoperatorio'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Recovery & Healing Support' : 'Apoyo para recuperación y cicatrización'}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">shield_with_heart</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Immunity Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Boosts defenses against infections, fatigue, and stress.' : 'Eleva defensas contra infecciones, fatiga y estrés.'}</p>
+
+                                    {/* Wellness Injections */}
+                                    <div>
+                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3 mt-2">{language === 'en' ? 'Wellness Injections' : 'Inyecciones de Bienestar'}</h5>
+                                        <div className="space-y-4">
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">syringe</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Vitamin B Complex + B12' : 'Complejo B + B12'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Supports energy & nervous system' : 'Apoya energía y sistema nervioso'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">vaccines</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Tri-Immune Shot' : 'Inyección Tri-Inmune'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Vitamin C + Zinc + Glutathione' : 'Vitamina C + Zinc + Glutatión'}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">local_fire_department</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Fat Blast Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Accelerates metabolism and fat burning energy.' : 'Acelera el metabolismo y la quema de grasa.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">auto_awesome</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Glow Beauty Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Revitalizes skin, hair, and nails from within.' : 'Revitaliza piel, cabello y uñas desde el interior.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">favorite</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Libido Enhancer Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Stimulates vitality, circulation, and hormonal balance.' : 'Estimula vitalidad, circulación y balance hormonal.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">fitness_center</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Performance Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Maximizes endurance and muscle recovery.' : 'Maximiza resistencia y recuperación muscular.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">water_drop</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">Hangover Cocktail</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Rapid rehydration and relief from fatigue.' : 'Rehidratación rápida y alivio de la fatiga.'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">coronavirus</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">COVID-19 Recovery</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Supports recovery from viral infections and aftereffects.' : 'Combate secuelas post-COVID y fortalece defensas.'}</p>
+
+                                    {/* Specialized Programs */}
+                                    <div>
+                                        <h5 className="font-bold text-teal-600 text-xs uppercase tracking-wider mb-3 mt-2">{language === 'en' ? 'Specialized Programs' : 'Programas Especializados'}</h5>
+                                        <div className="space-y-4">
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">biotech</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">NAD+ Therapy</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Cellular energy & mental clarity' : 'Energía celular y claridad mental'}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-4">
+                                                <span className="material-symbols-outlined text-teal-500 mt-1 font-normal">monitor_weight</span>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{language === 'en' ? 'Medical Weight Loss' : 'Control de Peso Médico'}</h4>
+                                                    <p className="text-xs text-slate-500">{language === 'en' ? 'Personalized, medically supervised program' : 'Programa personalizado con supervisión médica'}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
