@@ -441,7 +441,7 @@ const LandingPage = () => {
                                     <span className="material-symbols-outlined text-secondary bg-secondary/5 p-2 rounded-lg font-normal">call</span>
                                     <div>
                                         <p className="font-bold text-lg text-slate-800 dark:text-white">{language === 'en' ? 'Connect With Us' : 'Contáctenos'}</p>
-                                        <p className="text-slate-500 text-sm">Call: (786) 536-7728<br />Email: hello@ruizungermedical.com</p>
+                                        <p className="text-slate-500 text-sm">Call: (786) 536-7728<br />Email: ruizuregmedicalcenter@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
