@@ -315,10 +315,10 @@ const LandingPage = () => {
                                 </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">medication</span>
+                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">clinical_notes</span>
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'GLP-1 Therapy' : 'Terapia GLP-1'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Prescription support (if indicated)' : 'Apoyo con receta'}</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Medical Evaluation' : 'Evaluación Médica'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Initial health assessment' : 'Valoración inicial'}</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -329,24 +329,29 @@ const LandingPage = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">vital_signs</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Lipotropic Agents' : 'Lipotrópicos'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Metabolic support injections' : 'Inyecciones metabólicas'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">clinical_notes</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Medical Evaluation' : 'Evaluación'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Initial health assessment' : 'Valoración inicial'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">nutrition</span>
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Nutritional Counseling' : 'Nutrición'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Dietary guidance' : 'Guía dietética'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex gap-4">
+                                            <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">assignment</span>
+                                            <div>
+                                                <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Personalized Plan' : 'Plan a Medida'}</h4>
+                                                <p className="text-xs text-slate-500">{language === 'en' ? 'Tailored treatment strategy' : 'Estrategia personalizada'}</p>
+                                            </div>
+                                        </div>
+                                        <div className="ml-12 flex flex-col gap-1 border-l border-emerald-100 pl-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-emerald-400 rounded-full"></span>
+                                                <span className="text-xs text-slate-600 font-medium">{language === 'en' ? 'GLP-1 Therapy' : 'Terapia GLP-1'}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-emerald-400 rounded-full"></span>
+                                                <span className="text-xs text-slate-600 font-medium">{language === 'en' ? 'Lipotropic Agents' : 'Agentes Lipotrópicos'}</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -354,13 +359,6 @@ const LandingPage = () => {
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Ongoing Clinical Follow-up' : 'Seguimiento Clínico'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Regular progress monitoring' : 'Monitoreo continuo'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-emerald-600 mt-1 font-normal">assignment</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Personalized Plan' : 'Plan a Medida'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Tailored treatment strategy' : 'Estrategia a medida'}</p>
                                         </div>
                                     </div>
                                 </div>
