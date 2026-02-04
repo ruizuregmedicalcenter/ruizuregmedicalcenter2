@@ -352,6 +352,10 @@ const LandingPage = () => {
                                                 <span className="size-1 bg-emerald-400 rounded-full"></span>
                                                 <span className="text-xs text-slate-600 font-medium">{language === 'en' ? 'Lipotropic Agents' : 'Agentes Lipotrópicos'}</span>
                                             </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-emerald-400 rounded-full"></span>
+                                                <span className="text-xs text-slate-600 font-medium">{language === 'en' ? 'Medication' : 'Medicación'}</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
