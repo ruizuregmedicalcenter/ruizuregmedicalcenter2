@@ -274,17 +274,17 @@ const LandingPage = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">health_and_safety</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Preventive Care' : 'Cuidado Preventivo'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Proactive health strategies' : 'Estrategias de salud'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">assignment_turned_in</span>
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Treatment Planning' : 'Plan de Tratamiento'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Tailored to your needs' : 'Adaptado a usted'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-indigo-600 mt-1 font-normal">health_and_safety</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Preventive Care' : 'Cuidado Preventivo'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Proactive health strategies' : 'Estrategias de salud'}</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
