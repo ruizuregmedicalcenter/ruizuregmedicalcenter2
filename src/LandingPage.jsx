@@ -449,6 +449,15 @@ const LandingPage = () => {
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Energy boost' : 'Impulso de energía'}</p>
                                         </div>
                                     </div>
+                                    <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">medical_services</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Pre & Post Operative' : 'Pre y Post Operatorio'}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Surgical wellness support' : 'Apoyo de bienestar quirúrgico'}</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <p className="text-[10px] text-slate-400 mt-6 pt-4 border-t border-slate-100 italic">
                                     {language === 'en' ? 'All therapies require medical evaluation.' : 'Todas las terapias requieren evaluación médica.'}
