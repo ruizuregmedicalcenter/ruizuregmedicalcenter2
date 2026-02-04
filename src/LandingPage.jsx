@@ -198,27 +198,6 @@ const LandingPage = () => {
                                 </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">radiology</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Chest X-Ray Support' : 'Soporte de Rayos X'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Coordination if indicated' : 'Coordinación si es indicado'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">rocket_launch</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Expedited Service' : 'Servicio Expedito'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Rush options available' : 'Opciones urgentes disponibles'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
-                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">edit_document</span>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Form Preparation' : 'Preparación de Formas'}</h4>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Sealed envelope ready for interview' : 'Sobre sellado listo para la entrevista'}</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">clinical_notes</span>
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'I-693 Medical Exam' : 'Examen Médico I-693'}</h4>
@@ -237,6 +216,27 @@ const LandingPage = () => {
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Vaccination' : 'Vacunación'}</h4>
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Records validation & on-site shots' : 'Validación de registros y vacunas en el sitio'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">radiology</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Chest X-Ray Support' : 'Soporte de Rayos X'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Coordination if indicated' : 'Coordinación si es indicado'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">edit_document</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Form Preparation' : 'Preparación de Formas'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Sealed envelope ready for interview' : 'Sobre sellado listo para la entrevista'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <span className="material-symbols-outlined text-slate-600 mt-1 font-normal">rocket_launch</span>
+                                        <div>
+                                            <h4 className="font-bold text-slate-800 text-sm">{language === 'en' ? 'Expedited Service' : 'Servicio Expedito'}</h4>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Rush options available' : 'Opciones urgentes disponibles'}</p>
                                         </div>
                                     </div>
                                 </div>
