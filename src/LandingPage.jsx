@@ -449,22 +449,54 @@ const LandingPage = () => {
                                             <p className="text-xs text-slate-500">{language === 'en' ? 'Energy boost' : 'Impulso de energía'}</p>
                                         </div>
                                     </div>
-                                    <div className="flex gap-3">
-                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">clinical_notes</span>
-                                        <div>
-                                            <div className="flex items-baseline gap-2">
-                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Pre Operative' : 'Pre Operatorio'}</span>
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex gap-3">
+                                            <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">clinical_notes</span>
+                                            <div>
+                                                <div className="flex items-baseline gap-2">
+                                                    <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Pre Operative' : 'Pre Operatorio'}</span>
+                                                </div>
+                                                <p className="text-xs text-slate-500 font-medium">{language === 'en' ? 'Preparation & protection' : 'Preparación y protección'}</p>
                                             </div>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Surgical readiness assessment' : 'Evaluación previa a cirugía'}</p>
+                                        </div>
+                                        <div className="ml-10 flex flex-col gap-1 border-l border-cyan-100 pl-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Support hydration' : 'Apoyo de hidratación'}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Immune balance' : 'Balance inmunológico'}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Nutritional reserves' : 'Reservas nutricionales'}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="flex gap-3">
-                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">medical_services</span>
-                                        <div>
-                                            <div className="flex items-baseline gap-2">
-                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Post Operative' : 'Post Operatorio'}</span>
+                                    <div className="flex flex-col gap-2">
+                                        <div className="flex gap-3">
+                                            <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">medical_services</span>
+                                            <div>
+                                                <div className="flex items-baseline gap-2">
+                                                    <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Post Operative' : 'Post Operatorio'}</span>
+                                                </div>
+                                                <p className="text-xs text-slate-500 font-medium">{language === 'en' ? 'Recovery & healing support' : 'Cuidado y recuperación'}</p>
                                             </div>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Recovery & wellness support' : 'Apoyo en su recuperación'}</p>
+                                        </div>
+                                        <div className="ml-10 flex flex-col gap-1 border-l border-cyan-100 pl-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Supports wound healing' : 'Apoyo a la cicatrización'}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Reduced fatigue' : 'Reducción de fatiga'}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span className="size-1 bg-cyan-400 rounded-full"></span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Recovery focus' : 'Enfoque en recuperación'}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
