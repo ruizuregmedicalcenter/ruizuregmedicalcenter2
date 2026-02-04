@@ -450,12 +450,21 @@ const LandingPage = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-3">
+                                        <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">clinical_notes</span>
+                                        <div>
+                                            <div className="flex items-baseline gap-2">
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Pre Operative' : 'Pre Operatorio'}</span>
+                                            </div>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Surgical readiness assessment' : 'Evaluación previa a cirugía'}</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
                                         <span className="material-symbols-outlined text-cyan-600 text-sm mt-0.5">medical_services</span>
                                         <div>
                                             <div className="flex items-baseline gap-2">
-                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Pre & Post Operative' : 'Pre y Post Operatorio'}</span>
+                                                <span className="block text-sm font-bold text-slate-800">{language === 'en' ? 'Post Operative' : 'Post Operatorio'}</span>
                                             </div>
-                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Surgical wellness support' : 'Apoyo de bienestar quirúrgico'}</p>
+                                            <p className="text-xs text-slate-500">{language === 'en' ? 'Recovery & wellness support' : 'Apoyo en su recuperación'}</p>
                                         </div>
                                     </div>
                                 </div>
