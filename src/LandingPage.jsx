@@ -495,7 +495,7 @@ const LandingPage = () => {
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <span className="size-1 bg-cyan-400 rounded-full"></span>
-                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Recovery focus' : 'Enfoque en recuperación'}</span>
+                                                <span className="text-[11px] text-slate-600 font-medium">{language === 'en' ? 'Recovery' : 'Recuperación'}</span>
                                             </div>
                                         </div>
                                     </div>
