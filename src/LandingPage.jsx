@@ -549,7 +549,11 @@ const LandingPage = () => {
                                     <span className="material-symbols-outlined text-secondary bg-secondary/5 p-2 rounded-lg font-normal">schedule</span>
                                     <div>
                                         <p className="font-bold text-lg text-slate-800 dark:text-white">{language === 'en' ? 'Operating Hours' : 'Horas de Operación'}</p>
-                                        <p className="text-slate-500 text-sm">Mon - Fri: 10:00 AM - 7:00 PM<br />Sat - Sun: Closed</p>
+                                        <p className="text-slate-500 text-sm">
+                                            {language === 'en'
+                                                ? <>Mon - Fri: 10:00 AM - 7:00 PM<br />Sat: By Appointment Only<br />Sun: Closed</>
+                                                : <>Lun - Vie: 10:00 AM - 7:00 PM<br />Sáb: Por Cita Solamente<br />Dom: Cerrado</>}
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
