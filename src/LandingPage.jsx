@@ -641,26 +641,7 @@ const LandingPage = () => {
                     </div>
                 </section>
 
-                {/* CTA Section */}
-                <section className="max-w-[1200px] mx-auto px-6 pb-20" >
-                    <div className="bg-primary rounded-[2.5rem] p-12 text-center text-white relative overflow-hidden shadow-2xl">
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-secondary/40 via-transparent to-transparent"></div>
-                        <h2 className="text-3xl md:text-5xl font-extrabold mb-6 relative z-10 leading-tight">
-                            {language === 'en' ? 'Elevate Your Wellness Journey Today' : 'Eleve su Camino al Bienestar Hoy'}
-                        </h2>
-                        <p className="text-lg text-blue-50 mb-10 max-w-2xl mx-auto relative z-10 font-light">
-                            {language === 'en'
-                                ? 'Join our community of healthy, active patients. We accept most major insurances and offer transparent self-pay options.'
-                                : 'Únase a nuestra comunidad de pacientes sanos y activos. Aceptamos la mayoría de los seguros principales y ofrecemos opciones de pago por cuenta propia transparentes.'}
-                        </p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
-                            <a href="tel:+17865367728" className="bg-secondary hover:bg-secondary/90 text-white px-10 py-4 rounded-full font-extrabold text-lg transition-all shadow-lg active:scale-95 text-center flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined">call</span>
-                                (786) 536-7728
-                            </a>
-                        </div>
-                    </div>
-                </section>
+
             </main>
 
             {/* Footer */}
