@@ -255,8 +255,8 @@ const LandingPage = () => {
                                 </div>
                                 <p className="text-slate-500 mb-3 text-sm leading-relaxed">
                                     {language === 'en'
-                                        ? <><strong>No health insurance? We’re here for you.</strong><br /><br />We provide medical consultations for uninsured or self-pay patients, including access to laboratory testing, diagnostic imaging, and personalized medical guidance—all in one place.</>
-                                        : <><strong>¿No tiene seguro médico? Estamos aquí para usted.</strong><br /><br />Ofrecemos consultas médicas para pacientes sin seguro o con pago privado, incluyendo el acceso a pruebas de laboratorio, imágenes diagnósticas y orientación médica personalizada, todo en un solo lugar.</>}
+                                        ? "Services for patients without insurance or self-pay. Comprehensive care focused on your long-term well-being."
+                                        : "Servicios para pacientes sin seguro o pago privado. Atención integral enfocada en su bienestar a largo plazo."}
                                 </p>
                                 <div className="grid grid-cols-1 gap-4">
                                     <div className="flex gap-4">
